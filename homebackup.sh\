@@ -10,10 +10,10 @@ read HOMEFOLDER
 
 BACKUPDIR=/home
 TIMESTAMP=$(date | awk '{ print $1"_"$2"_"$3"_"$6 }')
-TARFILENAME="/var/tmp/$TIMESTAMP.$HOMEFOLDER.tar"
-GZIPFILENAME="/var/tmp/$TARFILENAME.gz"
+TARFILENAME="$TIMESTAMP.$HOMEFOLDER.tar"
+GZIPFILENAME="$TARFILENAME.gz"
 REMOTESERVER="10.1.10.71"
-REMOTEUSER="administrator"
+REMOTEUSER="Administrator"
 REMOTEDIR="~"
 LOGFILE="/var/tmp/homebackuplog.txt"
 
